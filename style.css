@@ -1,0 +1,172 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: aliceblue;
+    
+
+}
+body{
+    background-image: url(flor\ e\ mulher.jpg);
+    background-repeat: no-repeat ;
+    
+}  
+
+header{
+    text-align:center;
+}
+.titulo{
+    margin-top: 50px;
+}
+.juntas{
+    width: 300px;
+    border-radius: 30px 30px 30px 30px;
+    position: relative;
+    left: 40px;
+    margin-top: 20px;
+}
+@keyframes rotate {
+    from {
+      transform: rotateZ(0deg);
+    }
+  
+    to {
+      transform: rotateZ(360deg);
+    }
+  }
+  
+  .border {
+    background-image: linear-gradient(to left, red, blue);
+    width: 300px;
+    height: 100px;
+    border-radius: 20px;
+    position: relative;
+    left: 50px;
+    top: 50px;
+   
+  }
+  
+  .border::before {
+    background-image: linear-gradient(to left, red, blue);
+    content: "";
+    position: absolute;
+    z-index: -1;
+    height: 100px;
+    width: 130px;
+    scale: 1.3;
+    filter: blur(25px);
+    animation: rotate 4s linear infinite;
+    border-radius: 100px;
+  }
+  
+  .content {
+    background-color: #111;
+    width: 310px;
+    height: 100px;
+    border-radius: 19px;
+    position: relative;
+    right: 5px;
+    scale: 0.9;
+    text-align: center;
+    font-size: 30px;
+    
+  }
+ span {
+    position: relative;
+    top: 30px;
+    color: #111;
+    height: 30px;
+  }
+  .content:hover > span{
+    color: #636161;
+
+
+  }
+ .inspiracao{
+    position: relative;
+    top: 22px;
+    left: 50px;
+    font-size: 25px;
+ }
+ #aperte{
+    position: relative;
+    left: 37px;
+    top:10px;
+    color: aliceblue;
+ }
+ button {
+  
+    text-decoration: none;
+    position: relative;
+    top: 110px;
+    padding: 10px 20px;
+    border-radius: 7px;
+    border: 1px solid rgb(61, 106, 255);
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 2px;
+    background: transparent;
+    color: #fff;
+    overflow: hidden;
+    box-shadow: 0 0 0 0 transparent;
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+  }
+  
+  button:hover {
+    background: rgb(61, 106, 255);
+    box-shadow: 0 0 30px 5px rgba(0, 142, 236, 0.815);
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+  }
+  
+  button:hover::before {
+    -webkit-animation: sh02 0.5s 0s linear;
+    -moz-animation: sh02 0.5s 0s linear;
+    animation: sh02 0.5s 0s linear;
+  }
+  
+  button::before {
+    content: '';
+    display: block;
+    width: 0px;
+    height: 86%;
+    position: absolute;
+    top: 7%;
+    left: 0%;
+    opacity: 0;
+    background: #fff;
+    box-shadow: 0 0 50px 30px #fff;
+    -webkit-transform: skewX(-20deg);
+    -moz-transform: skewX(-20deg);
+    -ms-transform: skewX(-20deg);
+    -o-transform: skewX(-20deg);
+    transform: skewX(-20deg);
+  }
+  
+  @keyframes sh02 {
+    from {
+      opacity: 0;
+      left: 0%;
+    }
+  
+    50% {
+      opacity: 1;
+    }
+  
+    to {
+      opacity: 0;
+      left: 100%;
+    }
+  }
+  
+  button:active {
+    box-shadow: 0 0 0 0 transparent;
+    -webkit-transition: box-shadow 0.2s ease-in;
+    -moz-transition: box-shadow 0.2s ease-in;
+    transition: box-shadow 0.2s ease-in;
+  }
+  

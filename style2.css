@@ -1,0 +1,196 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    color: aliceblue;
+}
+body{
+    background-image: url(mulherpg2.jpg);
+    
+    
+}
+html{
+    scroll-behavior: smooth;
+}
+h2{
+  text-align: center;
+  color: aliceblue;
+  position: relative;
+  top: 120px;
+  font-size: 30px;
+}
+button { 
+    
+    width: 7em;
+    position: relative;
+    height: 3.5em;
+    border: 3px ridge #ea1414;
+    outline: none;
+    background-color: transparent;
+    color: white;
+    transition: 1s;
+    border-radius: 0.3em;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  button::after {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 3%;
+    width: 95%;
+    height: 40%;
+    background-color: transparent;
+    transition: 0.5s;
+    transform-origin: center;
+  }
+  
+  button::before {
+    content: "";
+    transform-origin: center;
+    position: absolute;
+    top: 80%;
+    left: 3%;
+    width: 95%;
+    height: 40%;
+    background-color: transparent;
+    transition: 0.5s;
+  }
+  
+  button:hover::before, button:hover::after {
+    transform: scale(0)
+  }
+  
+  button:hover {
+    box-shadow: inset 0px 0px 25px #c60c3b;
+  }
+
+  .primeiro{
+    position: relative;
+    top: 157px;
+    right: -33px;
+    text-decoration: none;
+    
+  }
+  .segundo{
+   position: relative;
+   left: 200px;
+   bottom: -101px;
+   text-decoration: none;
+  }
+  
+ 
+   h3{
+    color: #c60c3b;
+    position: relative;
+    top: 130px;
+    font-size: 40px;
+    padding-left: 15px;
+
+   }
+   p{
+    color:white;
+    position: relative;
+    top: 170px;
+    font-size: 20px;
+    padding-left: 15px;
+    padding-right: 10px ;
+   }      
+    p:hover{
+      color:  deeppink;
+      transition: all 1.0s;
+    }
+    .kathy{
+      position: relative;
+      top: 122px;
+    }
+    #kathyp2{
+      padding-top: 25px;
+    }
+    .tituloshirlei{
+      position: relative;
+      top: 350px;
+    }
+    .pshirlei {
+      position: relative;
+      top:390px;
+    }
+    .shirleip2{
+      position: relative;
+      top: 417px;
+     margin-bottom: 30px;
+    }
+ 
+    .Btn {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      width: 45px;
+      height: 45px;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      position: relative;
+      left: 22px;
+      bottom: 30px;
+      overflow: hidden;
+      transition-duration: .3s;
+      box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.199);
+      background-color: rgb(255, 65, 65);
+    }
+    
+    /* plus sign */
+    .sign {
+      width: 100%;
+      transition-duration: .3s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .sign svg {
+      width: 17px;
+    }
+    
+    .sign svg path {
+      fill: white;
+    }
+    /* text */
+    .text {
+      position: absolute;
+      right: 0%;
+      width: 0%;
+      opacity: 0;
+      color: white;
+      font-size: 1.2em;
+      font-weight: 600;
+      transition-duration: .3s;
+    }
+    /* hover effect on button width */
+    .Btn:hover {
+      width: 125px;
+      border-radius: 40px;
+      transition-duration: .3s;
+    }
+    
+    .Btn:hover .sign {
+      width: 30%;
+      transition-duration: .3s;
+      padding-left: 20px;
+    }
+    /* hover effect button's text */
+    .Btn:hover .text {
+      opacity: 1;
+      width: 70%;
+      transition-duration: .3s;
+      padding-right: 10px;
+    }
+    /* button click effect*/
+    .Btn:active {
+      transform: translate(2px ,2px);
+    }
+    
+    
+    
+   
